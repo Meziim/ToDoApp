@@ -1,0 +1,43 @@
+$radialCol1: rgb(0, 93, 199);
+$radialCol2: rgb(0, 44, 146);
+$green: rgb(0, 128, 0);
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: radial-gradient($radialCol1, $radialCol2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .AppParent {
+    width: 700px;
+    height: 600px;
+    background-color: white;
+    border-radius: 40px;
+    .Header {
+      display: flex;
+      justify-content: space-between;
+      padding: 0px 20px;
+      height: 50px;
+      align-items: center;
+      img {
+        height: 80%;
+      }
+    }
+  }
+}
+
+button.addItem {
+  height: 40px;
+  width: 70px;
+  border-radius: 10px;
+  border: none;
+  background-color: $green;
+  color: white;
+  font-size: 16px;
+  font-weight: 400;
+  transition: ease-in-out 0.3s;
+}
+button:hover {
+  transform: scale(105%);
+}
